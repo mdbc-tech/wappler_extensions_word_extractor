@@ -1,0 +1,1 @@
+# wappler_extensions_word_extractor
