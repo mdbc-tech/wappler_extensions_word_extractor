@@ -1,0 +1,31 @@
+[
+    {
+        type: 'WordExtractor_mymod',
+        module: 'wordimport',
+        action: 'WordExtractor',
+        groupTitle: 'Word Options',
+        groupIcon: 'fas fa-lg fa-file comp-files',
+        title : 'Word Extractor doc'
+        icon : 'fad fa-lg fa-solid fa-file-word comp-files',
+        dataScheme: [
+            {name: 'FileName', type: 'text'},
+            {name: 'FilePath', type: 'text'},
+            {name: 'body', type: 'text'}
+        ],
+        dataPickObject: true,
+        properties : [
+            
+            {
+                group: 'import word file ',
+                variables: [
+                    { "name": "wordfile", "optionName": "name", "title": "1. Name of process", "type": "text","required": false, "defaultValue": "" },
+			        { "name": "path", "optionName": "path", "title": "2. Path to file", "type": "file", "defaultValue": "", "serverDataBindings": true, "required": true },
+                   // { name: 'folderpath', optionName: 'FolderName', title: '3. Folder name', type: 'file', required: true, defaultValue: "", help: 'where is the file to import?', serverDataBindings: true},
+                   // { name: 'filelocation', optionName: 'Filelocation', title: '4. File Path', type: 'file', help:'What is the file name to import?', required: true, defaultValue: "", serverDataBindings: true},
+                    { name: 'output', optionName: 'output', title: 'Output', type: 'boolean', defaultValue: false }               
+                ]
+            }
+            
+        ]
+    }
+]
