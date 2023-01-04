@@ -14,19 +14,14 @@ select the path to the document in the key selector
 
 following this it will produce JSON output
 
-word._body,
+- word._body
+- word._annotations
+- word._footers
+- word._footnotes
+- word._headers
+- word._headerTextboxes
+- word._textboxes
 
-word._annotations
-
-word._footers
-
-word._footnotes
-
-word._headers
-
-word._headerTextboxes
-
-word._textboxes
 
 these can be used in code for additiona services
 
